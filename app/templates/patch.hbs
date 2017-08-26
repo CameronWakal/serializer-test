@@ -1,0 +1,12 @@
+{{outlet}}
+
+<h3>Patch route</h3>
+
+<button {{action 'newModule'}}>New Module</button>
+
+{{model}}
+<ul>
+  {{#each model.modules as |module|}}
+    <li>{{module.name}}</li>
+  {{/each}}
+</ul>

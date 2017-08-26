@@ -1,0 +1,11 @@
+<h1>Test</h1>
+
+<button {{action 'newPatch'}}>New Patch</button>
+
+<ul>
+  {{#each model as |patch|}}
+    <li>{{#link-to 'patch' patch}}{{patch.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
